@@ -45,7 +45,7 @@ class ToDo:
             )
         )
 
-    def main_page(self):
+    def main_page(self): # cria a box e o + 
         input_task = ft.TextField(hint_text='Digite sua tarefa aqui', expand=True, on_change=self.set_value)
         input_bar = ft.Row(
             controls=[
@@ -57,7 +57,7 @@ class ToDo:
                  
             ]
         )
-        tabs = ft.Tabs(
+        tabs = ft.Tabs(  # cria as categorias 
             selected_index=0,
             tabs=[
                 ft.Tab(text='Todos'),
